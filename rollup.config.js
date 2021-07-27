@@ -13,8 +13,10 @@ const isFull = process.env.FULL
 
 const plugins = isFull ? [] : [
     vue({
-        css: true,
-        compileTemplate: true
+        preprocessStyles: true,
+        template: {
+            isProduction: true,
+        }
     }),
     json(),
     commonjs(),
@@ -23,23 +25,10 @@ const plugins = isFull ? [] : [
         extract: true,
     }),
     babel({
-        "presets": [
-            [
-                "@vue/cli-plugin-babel/preset", {
-                    "modules": false
-                }
-            ]
-        ],
-        "plugins": [
-            [
-                "component",
-                {
-                    "libraryName": "element-plus",
-                    "styleLibraryName": "theme-chalk"
-                }
-            ]
-        ],
+        exclude: 'node_modules/**',
         runtimeHelpers: true,
+        babelrc: false,
+        presets: [['@babel/preset-env', { modules: false }]]
     })
 ]
 
@@ -54,19 +43,15 @@ module.exports = fs.readdirSync(root)
         const pkg = require(path.resolve(root, item, 'package.json'))
         return {
             input: path.resolve(root, item, 'index.js'),
-            output: [
-                {
-                    exports: 'auto',
-                    file: path.resolve(root, item, pkg.main),
-                    format: 'cjs'
-                },
-                {
-                    exports: 'auto',
-                    file: path.resolve(root, item, pkg.module),
-                    format: 'es'
+            external: ['vue'],
+            output: {
+                exports: 'auto',
+                file: path.resolve(root, item, pkg.module),
+                format: 'es',
+                globals: {
+                    vue: 'Vue'
                 }
-            ],
-            format: 'es',
+            },
             plugins: plugins
         }
     })
