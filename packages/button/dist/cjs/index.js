@@ -8508,6 +8508,8 @@ var script = vue.defineComponent({
   }
 });
 
+var _hoisted_1 = /*#__PURE__*/vue.createTextVNode("按钮");
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_solt = vue.resolveComponent("solt");
 
@@ -8515,7 +8517,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return vue.openBlock(), vue.createBlock(_component_el_button, null, {
     "default": vue.withCtx(function () {
-      return [vue.createVNode(_component_solt)];
+      return [vue.createVNode(_component_solt), _hoisted_1];
     }),
     _: 1
     /* STABLE */

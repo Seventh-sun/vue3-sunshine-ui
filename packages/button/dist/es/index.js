@@ -1,4 +1,4 @@
-import vue, { defineComponent, resolveComponent, openBlock, createBlock, withCtx, createVNode } from 'vue';
+import vue, { defineComponent, resolveComponent, openBlock, createBlock, withCtx, createVNode, createTextVNode } from 'vue';
 
 var fails = function (exec) {
   try {
@@ -8502,6 +8502,8 @@ var script = defineComponent({
   }
 });
 
+var _hoisted_1 = /*#__PURE__*/createTextVNode("按钮");
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_solt = resolveComponent("solt");
 
@@ -8509,7 +8511,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return openBlock(), createBlock(_component_el_button, null, {
     "default": withCtx(function () {
-      return [createVNode(_component_solt)];
+      return [createVNode(_component_solt), _hoisted_1];
     }),
     _: 1
     /* STABLE */
