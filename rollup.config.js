@@ -3,6 +3,8 @@ import path from 'path'
 import json from '@rollup/plugin-json'
 import vue from 'rollup-plugin-vue'
 import postcss from 'rollup-plugin-postcss'
+import babel from 'rollup-plugin-babel'
+import commonjs from 'rollup-plugin-commonjs'
 import { terser } from 'rollup-plugin-terser'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 
@@ -15,9 +17,29 @@ const plugins = isFull ? [] : [
         compileTemplate: true
     }),
     json(),
+    commonjs(),
     nodeResolve(),
     postcss({
         extract: true,
+    }),
+    babel({
+        "presets": [
+            [
+                "@vue/cli-plugin-babel/preset", {
+                    "modules": false
+                }
+            ]
+        ],
+        "plugins": [
+            [
+                "component",
+                {
+                    "libraryName": "element-plus",
+                    "styleLibraryName": "theme-chalk"
+                }
+            ]
+        ],
+        runtimeHelpers: true,
     })
 ]
 
@@ -44,6 +66,7 @@ module.exports = fs.readdirSync(root)
                     format: 'es'
                 }
             ],
+            format: 'es',
             plugins: plugins
         }
     })
