@@ -1,5 +1,5 @@
 <template>
-  <el-button><solt/>按钮1</el-button>
+  <el-button><slot/></el-button>
 </template>
 
 <script>
