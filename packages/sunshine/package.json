@@ -11,7 +11,7 @@
     "del": "rimraf dist"
   },
   "dependencies": {
-    "@liumingqin/button": "^0.0.0"
+    "@liumingqin/button": "latest"
   },
   "keywords": [],
   "author": "刘鸣钦 <1847159899@qq.com>",
