@@ -1,1 +1,1 @@
-"use strict";function t(t){return t&&"object"==typeof t&&"default"in t?t:{default:t}}var n={SunButton:t(require("@liumingqin/button")).default};const e=Object.create(null);e.install=t=>{for(const e in n){const o=n[e];t.component(o.name,o)}},module.exports=e;
+"use strict";function t(t){return t&&"object"==typeof t&&"default"in t?t:{default:t}}Object.defineProperty(exports,"__esModule",{value:!0});var e={SunButton:t(require("@liumingqin/button")).default};exports.install=t=>{for(const n in e){const o=e[n];t.component(o.name,o)}};
