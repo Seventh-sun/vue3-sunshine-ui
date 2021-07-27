@@ -1,1 +1,1 @@
-export { default as SunButton } from '@vue3-sunshine-ui/button/button';
+export{default as SunButton}from"@liumingqin/button/button";
