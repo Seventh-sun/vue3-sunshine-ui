@@ -1,6 +1,6 @@
 {
   "name": "@liumingqin/button",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "button component",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
