@@ -1,4 +1,4 @@
-export { default as SunButton } from '@liumingqin/button'
+import { default as SunButton } from '@liumingqin/button'
 
 export default {
     SunButton

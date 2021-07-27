@@ -1,1 +1,1 @@
-"use strict";require("@liumingqin/button");var n={SunButton:SunButton};const t=Object.create(null);t.install=t=>{for(const o in n){const e=n[o];t.component(e.name,e)}},module.exports=t;
+"use strict";function t(t){return t&&"object"==typeof t&&"default"in t?t:{default:t}}var n={SunButton:t(require("@liumingqin/button")).default};const e=Object.create(null);e.install=t=>{for(const e in n){const o=n[e];t.component(o.name,o)}},module.exports=e;
