@@ -1,4 +1,4 @@
-import components from './components.js'
+import components from './src/components.js'
 
 const SunshineUI = Object.create(null)
 

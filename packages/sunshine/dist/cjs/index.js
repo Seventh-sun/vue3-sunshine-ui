@@ -1,1 +1,1 @@
-"use strict";function e(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}Object.defineProperty(exports,"__esModule",{value:!0});var t=e(require("@liumingqin/button/button"));Object.defineProperty(exports,"SunButton",{enumerable:!0,get:function(){return t.default}});
+"use strict";require("@liumingqin/button");var n={SunButton:SunButton};const t=Object.create(null);t.install=t=>{for(const o in n){const e=n[o];t.component(e.name,e)}},module.exports=t;
