@@ -1,0 +1,1 @@
+import{openBlock as n,createBlock as e}from"vue";var t={name:"SunButton",props:{},setup:n=>({})};t.render=function(t,r,o,u,p,a){return n(),e("div",null," 按钮 ")},t.install=n=>{n.component(t.name,t)};export default t;

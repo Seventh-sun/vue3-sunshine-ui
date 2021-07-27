@@ -1,0 +1,1 @@
+"use strict";var e=require("vue"),n={name:"SunButton",props:{},setup:e=>({})};n.render=function(n,r,t,o,u,l){return e.openBlock(),e.createBlock("div",null," 按钮 ")},n.install=e=>{e.component(n.name,n)},module.exports=n;
