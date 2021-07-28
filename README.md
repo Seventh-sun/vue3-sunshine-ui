@@ -17,3 +17,9 @@ yarn build:prod
 ```
 yarn build:ui
 ```
+
+## 发布子包
+
+```
+yarn lerna
+```
