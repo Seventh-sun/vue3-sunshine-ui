@@ -1,0 +1,108 @@
+.el-message{
+    min-width: 300px!important;
+    padding: 12px 12px 12px 15px!important;
+}
+.el-message .el-message__content{
+    font-size: 12px;
+}
+.el-table th{
+    background-color: #f5f7fa!important;
+    padding: 10px 0 8px!important;
+}
+.el-input__inner, .el-button{
+    border-radius: 2px!important;
+}
+.el-pagination{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.el-tooltip__popper {
+    max-width: 800px; 
+    transition: none;
+}
+.el-tooltip__popper .el-popper__arrow{
+    transition: none;
+}
+.el-message-box--center .el-message-box__btns{
+    display: flex;
+    justify-content: center;
+}
+.el-table__expand-icon .el-icon-arrow-right{
+    font-size: 12px!important;
+}
+.el-button [class*=ri]{
+    font-size: 12px!important;
+    vertical-align: -1.75px;
+}
+[class*=" el-icon-"].el-icon-arrow-up, 
+[class*=" el-icon-"].el-icon-arrow-left,
+[class*=" el-icon-"].el-icon-arrow-right,
+[class*=" el-icon-"].el-icon-more,
+[class*=" el-icon-"].el-icon-close,
+body .el-icon-plus,
+body .el-icon-error,
+body .el-icon-success,
+body .el-icon-warning,
+body .el-icon-arrow-right,
+body .el-icon-arrow-left,
+body .el-icon-search,
+body .el-icon-caret-right
+{
+    font-family: 'remixicon' !important;
+}
+[class*=" el-icon-"].el-icon-arrow-up::before {
+    content: "\ea78";
+}
+[class*=" el-icon-"].el-icon-arrow-left::before, body .el-icon-arrow-left::before {
+    content: "\ea64";
+}
+[class*=" el-icon-"].el-icon-arrow-right::before, body .el-icon-arrow-right::before  {
+    content: "\ea6e";
+}
+[class*=" el-icon-"].el-icon-more::before {
+    content: "\ef79";
+}
+[class*=" el-icon-"].el-icon-more::before {
+    content: "\eb99";
+}
+body .el-icon-plus::before {
+    content: "\ea13";
+}
+body .el-icon-error::before {
+    content: "\eb96";
+}
+body .el-icon-success::before {
+    content: "\eb80";
+}
+body .el-icon-warning::before {
+    content: "\eca0";
+}
+body .el-icon-search::before {
+    content: "\f0d1";
+}
+body .el-icon-caret-right::before {
+    content: "\ea6d";
+}
+body .el-select-dropdown.is-multiple .el-select-dropdown__item.selected::after {
+    position: absolute;
+    right: 20px;
+    font-family: 'remixicon' !important;
+    content: "\eb7b";
+    font-size: 12px;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+}
+.el-tree-node__expand-icon{
+    font-size: 16px!important;
+}
+@font-face {
+    font-family: "remixicon";
+    src: url('https://sunshine-icon.oss-cn-shenzhen.aliyuncs.com/fonts/remixicon.eot?t=1590207869815'); /* IE9*/
+    src: url('https://sunshine-icon.oss-cn-shenzhen.aliyuncs.com/fonts/remixicon.eot?t=1590207869815#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url("https://sunshine-icon.oss-cn-shenzhen.aliyuncs.com/fonts/remixicon.woff2?t=1590207869815") format("woff2"),
+    url("https://sunshine-icon.oss-cn-shenzhen.aliyuncs.com/fonts/remixicon.woff?t=1590207869815") format("woff"),
+    url('https://sunshine-icon.oss-cn-shenzhen.aliyuncs.com/fonts/remixicon.ttf?t=1590207869815') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('https://sunshine-icon.oss-cn-shenzhen.aliyuncs.com/fonts/remixicon.svg?t=1590207869815#remixicon') format('svg'); /* iOS 4.1- */
+    font-display: swap;
+}

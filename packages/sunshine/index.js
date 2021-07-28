@@ -1,3 +1,4 @@
+import './style/index.css'
 import components from './src/components.js'
 
 const install = Vue => {

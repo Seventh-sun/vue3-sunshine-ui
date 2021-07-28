@@ -1,1 +1,1 @@
-import n from"@liumingqin/button";var o={SunButton:n};const t=n=>{for(const t in o){const i=o[t];n.component(i.name,i)}};export{t as install};
+import n from"@liumingqin/button";var t={SunButton:n};var o={install:n=>{for(const o in t){const a=t[o];n.component(a.name,a)}}};export{o as default};
