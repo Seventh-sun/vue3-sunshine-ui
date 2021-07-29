@@ -1,1 +1,0 @@
-"use strict";function t(t){return t&&"object"==typeof t&&"default"in t?t:{default:t}}Object.defineProperty(exports,"__esModule",{value:!0});var e={SunButton:t(require("@liumingqin/button")).default};exports.install=t=>{for(const n in e){const o=e[n];t.component(o.name,o)}};

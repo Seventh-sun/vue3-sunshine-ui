@@ -9,7 +9,8 @@
     "build:prod": "cross-env NODE_ENV=production rollup -c",
     "build:ui": "cross-env NODE_ENV=production FULL=1 rollup -c",
     "lerna": "lerna publish",
-    "clean": "lerna clean"
+    "clean": "lerna clean",
+    "plop": "plop"
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
@@ -23,6 +24,7 @@
     "element-plus": "^1.0.2-beta.63",
     "lerna": "^4.0.0",
     "node-sass": "^6.0.1",
+    "plop": "^2.7.4",
     "postcss": "^8.3.6",
     "postcss-import": "^14.0.2",
     "remixicon": "^2.5.0",
