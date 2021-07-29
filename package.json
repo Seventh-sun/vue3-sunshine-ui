@@ -10,6 +10,7 @@
     "build:ui": "cross-env NODE_ENV=production FULL=1 rollup -c",
     "lerna": "lerna publish",
     "clean": "lerna clean",
+    "publish": "lerna publish from-git",
     "plop": "plop"
   },
   "devDependencies": {
